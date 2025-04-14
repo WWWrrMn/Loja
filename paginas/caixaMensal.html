@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Mensal</title>
+    <link id="style" rel="stylesheet">
+    <style>
+        #caixaMensal {
+            font-size: 23px;
+            padding: 5px 15px 5px 15px
+        }
+    </style>
+</head>
+<body>
+    <div id="pesquisa">
+        <span>Pesquisar Ano:</span>
+        <input class="campo" type="number" id="pesquisarAno" autofocus onkeyup="pesquisarAno(event)">
+    </div>
+    <div id="painelCaixa">
+        <div>
+            <span id="ano"></span>
+            <span>Jan</span>
+            <span>Fev</span>
+            <span>Mar</span>
+            <span>Abr</span>
+            <span>Mai</span>
+            <span>Jun</span>
+            <span>Jul</span>
+            <span>Ago</span>
+            <span>Set</span>
+            <span>Out</span>
+            <span>Nov</span>
+            <span>Dez</span>
+            <span>Acumulados</span>
+            <span>Medias</span>
+        </div>
+        <div>
+            <span>Compras</span>
+        </div>
+        <div>
+            <span>Vendas</span>
+        </div>
+        <div>
+            <span>Saldo</span>
+        </div>
+        <div>
+            <span>Despesas</span>
+        </div>
+        <div>
+            <span>Lucro</span>
+        </div>
+        <div>
+            <span>Margem Lucro</span>
+        </div>
+    </div>
+    <div id="navegacao">
+        <div id="cadastrarNav" class="botaoNav">
+            <span class="navegacaoOpcao">
+                Cadastrar Produto
+            </span>
+        </div>
+        <div id="estoque" class="botaoNav">
+            <span class="navegacaoOpcao">
+                Estoque
+            </span>
+        </div>
+        <div class="botaoNav" id="cadastroCliente">
+            <span class="navegacaoOpcao">
+                Cadastrar Cliente
+            </span>
+        </div>
+                <div class="botaoNav" id="clientes">
+            <span class="navegacaoOpcao">
+                Clientes
+            </span>
+        </div>
+        <div class="botaoNav" id="cadastrarCompra">
+            <span class="navegacaoOpcao">
+                Cadastrar Compra
+            </span>
+        </div>
+        <div class="botaoNav" id="comprasNav">
+            <span class="navegacaoOpcao">
+                Compras
+            </span>
+        </div> 
+        <div class="botaoNav" id="prestacoes">
+            <span class="navegacaoOpcao">
+                Prestações
+            </span>
+        </div>
+        <div class="botaoNav" id="cadastrarPrestacao">
+            <span class="navegacaoOpcao">
+                Cadastrar Prestação
+            </span>
+        </div>
+        <div class="botaoNav" id="caixaMensal">
+            <span class="navegacaoOpcao">
+                Caixa Mensal
+            </span>
+        </div>
+    </div>
+</body>
+<script id="script" type="text/javascript"></script>
+<script>
+    const style = document.getElementById('style')
+    const script = document.getElementById('script')
+    const caminhoCss = localStorage.getItem('inicio') + 'src/style.css'
+    const caminhoJs = localStorage.getItem('inicio') + 'src/script.js'
+    style.href = caminhoCss
+    script.src = caminhoJs
+</script>
+</html>

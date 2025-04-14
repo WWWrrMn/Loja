@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/style.css" rel="stylesheet">
+    <style>
+        #cadastrarNav {
+            font-size: 23px;
+            padding: 5px 15px 5px 15px;
+        }
+    </style>
+    <meta id="id" content="1">
+    <title>Cadastrar Produtos</title>
+</head>
+
+<body>
+    <div id="centro">
+        <div class="grupo">
+            <span>Nome do produto:</span>
+            <input name="nome" class="campo" type="text" onkeyup="valido(); enter(event, 'compra')" autofocus>
+        </div>
+        <div class="grupo">
+            <span>Valor de compra:</span>
+            <input name="compra" class="campo" type="number" onkeyup="valido(); enter(event, 'venda')">
+        </div>
+        <div class="grupo">
+            <span>Valor de venda:</span>
+            <input name="venda" class="campo" type="number" onkeyup="valido(); enter(event, 'button')">
+        </div>
+        <button id="cadastrar" onclick="cadastrarProduto()" disabled>Cadastrar</button>
+    </div>
+    <div id="navegacao">
+        <div id="cadastrarNav" class="botaoNav">
+            <span class="navegacaoOpcao">
+                Cadastrar Produto
+            </span>
+        </div>
+        <div id="estoque" class="botaoNav">
+            <span class="navegacaoOpcao">
+                Estoque
+            </span>
+        </div>
+        <div class="botaoNav" id="cadastroCliente">
+            <span class="navegacaoOpcao">
+                Cadastrar Cliente
+            </span>
+        </div>
+        <div class="botaoNav" id="clientes">
+            <span class="navegacaoOpcao">
+                Clientes
+            </span>
+        </div>
+        <div class="botaoNav" id="cadastrarCompra">
+            <span class="navegacaoOpcao">
+                Cadastrar Compra
+            </span>
+        </div>
+        <div class="botaoNav" id="comprasNav">
+            <span class="navegacaoOpcao">
+                Compras
+            </span>
+        </div>
+        <div class="botaoNav" id="prestacoes">
+            <span class="navegacaoOpcao">
+                Prestações
+            </span>
+        </div>
+        <div class="botaoNav" id="cadastrarPrestacao">
+            <span class="navegacaoOpcao">
+                Cadastrar Prestação
+            </span>
+        </div>
+        <div class="botaoNav" id="caixaMensal">
+            <span class="navegacaoOpcao">
+                Caixa Mensal
+            </span>
+        </div>
+    </div>
+</body>
+<script src="./src/script.js" type="text/javascript"></script>
+<script>
+    if (localStorage.getItem('inicio') != window.location.href) {
+        localStorage.setItem('inicio', window.location.href)
+    }
+</script>
+
+</html>

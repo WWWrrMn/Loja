@@ -1,0 +1,147 @@
+body {
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    font-family: Arial;
+}
+
+
+#centro {
+    position:absolute;
+    top: 40%;
+    transform: translate(0, -50%);
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    > button {
+        font-size: 20px;
+        border-radius: 8px;
+        padding: 5px 20px 5px 20px;
+    }
+}
+
+.campo {
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 2px 2px 2px 5px;
+}
+
+.grupo {
+    display:flex;
+    flex-direction: column;
+    gap: 2px;
+    > span {
+        font-size: 20px;
+    }
+
+}
+
+#navegacao {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display:flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.botaoNav {
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    font-size: 18px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    > span {
+        cursor: pointer;
+    }
+}
+
+.botaoNav:hover {
+    background-color: lightgray
+}
+span {
+    cursor: default
+}
+#painel {
+    position: absolute;
+    top: 20vh;
+    display:flex;
+    > div {
+        .cabeca {
+            cursor: default
+        }
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            > span {
+                border: 1px solid;
+                padding: 10px;
+                display:flex;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#pesquisa {
+    position: absolute;
+    top: 5vh;
+    display:flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+#painelTotalizador {
+    background-color: white;
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100px;
+    border: 1px solid;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    font-size: 20px;    
+}
+
+.cobrarReceber:hover {
+    background-color: lightgray
+}
+
+#anoExibido {
+    position: fixed;
+    top:0;
+    left: 0;
+    margin: 30px;
+}
+
+#painelCaixa {
+    position: absolute;
+    top: 14vh;
+    display:flex;
+    flex-direction: row;
+    > div {
+        display: flex;
+        flex-direction: column;
+        > span {
+            padding: 8px 13px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #estoque {
+            font-size: 23px;
+            padding: 5px 15px 5px 15px;
+        }
+    </style>
+    <title>Estoque</title>
+    <link id="style" rel="stylesheet">
+</head>
+<body>
+    <div id="painelTotalizador">
+        <span>Valor de venda total:</span>
+        <span id="total"></span>
+    </div>
+    <div id="pesquisa">
+        <span>Pesquisar:</span>
+        <input class="campo" type="text" id="pesquisaCampo" onkeyup="pesquisar()" autofocus>
+    </div>
+    <div id="painel">
+        <div>
+            <div>
+                <span class="cabeca">Produto</span>
+            </div>
+            <div class="estoque">
+            </div>
+        </div>
+        <div>
+            <div>
+                <span class="cabeca">Compra</span>
+            </div>
+            <div class="estoque">
+
+            </div>
+        </div>
+        <div>
+            <div>
+                <span class="cabeca">Venda</span>
+            </div>
+            <div class="estoque">
+
+            </div>
+        </div>
+        <div>
+            <div>
+                <span class="cabeca">Quantidade</span>
+
+            </div>
+            <div class="estoque">
+
+            </div>
+        </div>
+    </div>
+    <div id="navegacao">
+        <div id="cadastrarNav" class="botaoNav">
+            <span class="navegacaoOpcao">
+                Cadastrar Produto
+            </span>
+        </div>
+        <div id="estoque" class="botaoNav">
+            <span class="navegacaoOpcao">
+                Estoque
+            </span>
+        </div>
+        <div class="botaoNav" id="cadastroCliente">
+            <span class="navegacaoOpcao">
+                Cadastrar Cliente
+            </span>
+        </div>
+        <div class="botaoNav" id="clientes">
+            <span class="navegacaoOpcao">
+                Clientes
+            </span>
+        </div>
+        <div class="botaoNav" id="cadastrarCompra">
+            <span class="navegacaoOpcao">
+                Cadastrar Compra
+            </span>
+        </div>
+        <div class="botaoNav" id="comprasNav">
+            <span class="navegacaoOpcao">
+                Compras
+            </span>
+        </div>
+        <div class="botaoNav" id="prestacoes">
+            <span class="navegacaoOpcao">
+                Prestações
+            </span>
+        </div>
+        <div class="botaoNav" id="cadastrarPrestacao">
+            <span class="navegacaoOpcao">
+                Cadastrar Prestação
+            </span>
+        </div>
+        <div class="botaoNav" id="caixaMensal">
+            <span class="navegacaoOpcao">
+                Caixa Mensal
+            </span>
+        </div>
+    </div>
+</body>
+
+<script id="script" type="text/javascript"></script>
+<script>
+    const style = document.getElementById('style')
+    const script = document.getElementById('script')
+    let caminhoJs = localStorage.getItem('inicio') + 'src/script.js'
+    let caminhoCss = localStorage.getItem('inicio') + 'src/style.css'
+    style.href = caminhoCss
+    script.src = caminhoJs
+</script>
+</html>

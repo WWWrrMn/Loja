@@ -4,10 +4,12 @@ body {
     display:flex;
     justify-content: center;
     font-family: Arial;
+    background: linear-gradient(#f0f0f0, #e0e0e0);
 }
 
 
 #centro {
+    background: linear-gradient(#ffffff, #f0f0f0);
     position:absolute;
     top: 40%;
     transform: translate(0, -50%);
@@ -17,7 +19,6 @@ body {
     align-items: center;
     border: 1px solid black;
     padding: 30px;
-    border-radius: 20px;
     > button {
         font-size: 20px;
         border-radius: 8px;
@@ -59,14 +60,14 @@ body {
     font-size: 18px;
     height: 40px;
     cursor: pointer;
-    background-color: white;
+    background: linear-gradient(#edeef0, #bdbdbd, #dedede);
     > span {
         cursor: pointer;
     }
 }
 
 .botaoNav:hover {
-    background-color: lightgray
+    filter: brightness(1.2);
 }
 span {
     cursor: default
